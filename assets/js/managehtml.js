@@ -1,8 +1,9 @@
-var urlFile = "https://vivasoft.azurewebsites.net/";
-urlFile = "https://raw.githubusercontent.com/Patrita63/HTMLVivasoftSite/master/"
+// var urlFile = "https://vivasoft.azurewebsites.net/";
+var urlFileEn = "https://raw.githubusercontent.com/Patrita63/HTMLVivasoftSite/master/en-US/"
+var urlFileIt = "https://raw.githubusercontent.com/Patrita63/HTMLVivasoftSite/master/it-IT/"
 /* https://github.com/Patrita63/HTMLVivasoftSite */
 
-function includeHTML() {
+function includeHTML(language) {
   console.log('Inside includeHTML!');
   var z, i, elmnt, file, xhttp;
   /* Loop through a collection of all HTML elements: */
@@ -24,8 +25,14 @@ function includeHTML() {
         }
       }
       // To Avoid CORS ERROR WHEN TEST LOCALLY
-      debugger;
-      var filePath = urlFile + file;
+      // debugger;
+      let filePath = "";
+      if (language = "en-US") {
+        filePath = urlFileEn + file;
+      } else if (language = "it-IT") {
+        filePath = urlFileIt + file;
+      }
+      
       console.log('includeHTML filePath: ' + filePath);
       xhttp.open("GET", filePath, true);
       xhttp.send();
