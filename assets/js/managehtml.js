@@ -1,5 +1,6 @@
 var urlFile = "https://vivasoft.azurewebsites.net/";
-https://github.com/Patrita63/HTMLVivasoftSite
+urlFile = "https://raw.githubusercontent.com/Patrita63/HTMLVivasoftSite/master/"
+/* https://github.com/Patrita63/HTMLVivasoftSite */
 
 function includeHTML() {
   console.log('Inside includeHTML!');
@@ -22,7 +23,7 @@ function includeHTML() {
           includeHTML();
         }
       }
-      // To Avoid CORS ERROR
+      // To Avoid CORS ERROR WHEN TEST LOCALLY
       debugger;
       var filePath = urlFile + file;
       console.log('includeHTML filePath: ' + filePath);
