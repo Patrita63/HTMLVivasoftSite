@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/c2a41a0d-c4b3-4def-9b61-9fcf9ef796f3/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/vivasoft",
+    "appService.deploySubpath": "."
+}
