@@ -1354,17 +1354,17 @@ Slider 2 Area Css
   background: #051242;
   color: #ffffff;
 }
-
+/* 1920 x 1080 */
 .slider-area-2 .single-slider-bg-1 {
-  background: url(../images/home-bg-3.jpg);
+  background: url(../images/single-slider-bg-1-IT-consulting.jpg);
 }
 
 .slider-area-2 .single-slider-bg-2 {
-  background: url(../images/home-bg-4.jpg);
+  background: url(../images/single-slider-bg-2-IT-Training.jpg);
 }
 
 .slider-area-2 .single-slider-bg-3 {
-  background: url(../images/home-bg-5.jpg);
+  background: url(../images/single-slider-bg-3-office-365.jpg);
 }
 
 /*
