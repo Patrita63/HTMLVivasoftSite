@@ -290,7 +290,7 @@ jQuery(function ($) {
     // Switch Btn
 	// $('body').append("<div class='switch-box'><label id='switch' class='switch'><input type='checkbox' onchange='toggleTheme()' id='slider'><span class='slider round'></span></label></div>");
 
-    $('body').append("<div id='cookie' class='switch-box'><label id='switch' class='switch'><input type='button' onclick='hideCookieMessage()'><span>Utilizziamo i cookies per garantire la funzionalità del sito e per tenere conto delle vostre scelte di navigazione. Continuando la navigazione, accetti di utilizzare i cookies. Maggiori Informazioni</span></label></div>");
+    $('body').append("<div id='cookie' class='cookie-box'><label id='cookie' class='cookie'><input type='button' onclick='hideCookieMessage()'><span>Utilizziamo i cookies per garantire la funzionalità del sito e per tenere conto delle vostre scelte di navigazione. Continuando la navigazione, accetti di utilizzare i cookies. Maggiori Informazioni</span></label></div>");
 
 }(jQuery));
 
