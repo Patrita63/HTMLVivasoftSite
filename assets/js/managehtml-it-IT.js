@@ -3,7 +3,7 @@ var urlFile = "https://raw.githubusercontent.com/Patrita63/HTMLVivasoftSite/mast
 /* https://github.com/Patrita63/HTMLVivasoftSite */
 
 function includeHTML(language) {
-  if (language !== "en-US") {
+  if (language !== "it-IT") {
     return;
   }
   var z, i, elmnt, file, xhttp;
