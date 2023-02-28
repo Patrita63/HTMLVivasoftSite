@@ -4,8 +4,19 @@ var urlFileIt = "https://raw.githubusercontent.com/Patrita63/HTMLVivasoftSite/ma
 /* https://github.com/Patrita63/HTMLVivasoftSite */
 
 function includeHTML(language) {
-  console.log('Inside includeHTML!');
   var z, i, elmnt, file, xhttp;
+
+  console.log('Inside includeHTML! - language:' + language);
+  // To Avoid CORS ERROR WHEN TEST LOCALLY
+  // debugger;
+  let filePath = "";
+  if (language = "en-US") {
+    filePath = urlFileEn + file;
+  } else if (language = "it-IT") {
+    filePath = urlFileIt + file;
+  }
+  console.log('includeHTML filePath: ' + filePath);
+
   /* Loop through a collection of all HTML elements: */
   z = document.getElementsByTagName("*");
   for (i = 0; i < z.length; i++) {
@@ -28,16 +39,7 @@ function includeHTML(language) {
           }
         }
       }
-      // To Avoid CORS ERROR WHEN TEST LOCALLY
-      // debugger;
-      let filePath = "";
-      if (language = "en-US") {
-        filePath = urlFileEn + file;
-      } else if (language = "it-IT") {
-        filePath = urlFileIt + file;
-      }
       
-      console.log('includeHTML filePath: ' + filePath);
       xhttp.open("GET", filePath, true);
       xhttp.send();
       /* Exit the function: */
