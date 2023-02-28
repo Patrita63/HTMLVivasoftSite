@@ -16,14 +16,14 @@ function includeHTML(language) {
     /*search for elements with a certain atrribute:*/
     file = elmnt.getAttribute("w3-include-html");
     
-    console.log('includeHTML filePath: ' + filePath);
     if (file) {
       // To Avoid CORS ERROR WHEN TEST LOCALLY
-      if (language = "en-US") {
+      if (language == "en-US") {
         filePath = urlFileEn + file;
-      } else if (language = "it-IT") {
+      } else if (language == "it-IT") {
         filePath = urlFileIt + file;
       };
+      console.log('includeHTML filePath: ' + filePath);
       /* Make an HTTP request using the attribute value as the file name: */
       xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function() {
