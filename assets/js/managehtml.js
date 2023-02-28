@@ -31,7 +31,7 @@ function includeHTML(language) {
           if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
           /* Remove the attribute, and call this function once more: */
           elmnt.removeAttribute("w3-include-html");
-          includeHTML("it-IT");
+          includeHTML("en-US");
         };
       };
       
