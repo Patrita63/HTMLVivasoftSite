@@ -290,13 +290,15 @@ jQuery(function ($) {
     // Switch Btn
 	// $('body').append("<div class='switch-box'><label id='switch' class='switch'><input type='checkbox' onchange='toggleTheme()' id='slider'><span class='slider round'></span></label></div>");
 
+    $('body').append("<div id='cookie'><label id='switch' class='switch'><input type='button' onclick='hideCookieMessage()'><span>Utilizziamo i cookies per garantire la funzionalità del sito e per tenere conto delle vostre scelte di navigazione. Continuando la navigazione, accetti di utilizzare i cookies. Maggiori Informazioni</span></label></div>");
+
 }(jQuery));
 
     // function to set a given theme/color-scheme
     function setTheme(themeName) {
         localStorage.setItem('paso_theme', themeName);
         document.documentElement.className = themeName;
-    }
+    };
     // function to toggle between light and dark theme
     function toggleTheme() {
         if (localStorage.getItem('paso_theme') === 'theme-dark') {
@@ -304,6 +306,9 @@ jQuery(function ($) {
         } else {
             setTheme('theme-dark');
         }
+    };
+    function hideCookieMessage() {
+        var msgCookie = document.getElementById("cookie");
     }
     // Immediately invoked function to set the theme on initial load
     // PATRIZIO
