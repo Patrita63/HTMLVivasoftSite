@@ -1,5 +1,5 @@
 /*
-@File: Paso Template Styles
+@File: Vivasoft Template Styles
 
 * This file contains the styling for the actual template, this
 is the file you need to edit to change the look of the
@@ -5340,7 +5340,7 @@ Contact Area Css
 }
 
 .home-2-contact .contact-img {
-  background: url(../images/contact-img2.jpg);
+  background: url(../images/company/contactVivasoft.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;

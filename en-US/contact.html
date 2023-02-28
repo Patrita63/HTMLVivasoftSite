@@ -29,7 +29,10 @@
         <!-- Favicon -->
         <link rel="icon" type="image/png" href="../assets/images/favicon.png"/>
         <!-- Tittle -->
-        <title>Paso - IT Solutions & Digital Services HTML Template</title>
+        <title>Vivasoft - IT Solutions & Digital Services HTML Template</title>
+
+        <!-- managehtml js -->
+        <script src="../assets/js/managehtml.js"></script>
     </head>
 
     <body>
@@ -49,84 +52,57 @@
         <!-- PreLoader End -->
 
         <!-- Header Area -->
-        <header class="header-area">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-2 col-sm-0">
-                        <div class="logo">
-                            <a href="index.html"><img src="../assets/images/logo.png" alt="logo" /></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-8 col-sm-8 text-right pr-0">
-                        <div class="header-content-right">
-                            <ul class="header-contact">
-                                <li><a href="tel:+393482350751"><i class="bx bxs-phone-call"></i> +39 34 82350 751</a></li>
-                                <li><a href="mailto:info@vivasoft.it"><i class="bx bxs-envelope"></i> info@vivasoft.it</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-sm-4 text-right pl-0">
-                        <div class="header-content-right">
-                            <ul class="header-social">
-                                <li>
-                                    <a href="#" target="_blank"><i class="bx bxl-facebook"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank"><i class="bx bxl-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank"> <i class="bx bxs-envelope"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank"> <i class="bx bxl-youtube"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+        <div w3-include-html="header.html"></div> 
+        <script>
+            includeHTML("en-US");
+        </script>
         <!-- End Header Area -->
 
         <!--Navbar Area -->
         <div class="navbar-area">
             <div class="mobile-nav">
-                <a href="index.html" class="logo">
-                    <img src="../assets/images/logo.png" alt="logo" />
+                <a href="../index.html" class="logo Vivasoft">
+                    <img src="../assets/images/logo.png" alt="logo Vivasoft" />
                 </a>
             </div>
-
+        
             <div class="main-nav">
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light">
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav text-center">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link dropdown-toggle">Home</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="index.html" class="nav-link">Home One</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="index-2.html" class="nav-link">Home Two</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="index-3.html" class="nav-link">Home Three</a>
-                                        </li>
-                                    </ul>
+                                    <a href="index.html" class="nav-link dropdown-toggle_no+">Home</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="about.html" class="nav-link">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link dropdown-toggle">Solutions</a>
+                                    <a href="#" class="nav-link dropdown-toggle">IT Services</a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <a href="solutions.html" class="nav-link">Solutions</a>
+                                            <a href="solutions.html" class="nav-link">Cloud Azure Consultancy</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="solutions-details.html" class="nav-link">Solutions Details</a>
+                                            <a href="solutions.html" class="nav-link">Microsoft 365 Consultancy</a>
                                         </li>
+                                        <!-- <li class="nav-item">
+                                            <a href="solutions-details.html" class="nav-link">Solutions Details</a>
+                                        </li> -->
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link dropdown-toggle">Training</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a href="solutions.html" class="nav-link">Academy</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="solutions.html" class="nav-link">Microsoft Official Course MOCs</a>
+                                        </li>
+                                        <!-- <li class="nav-item">
+                                            <a href="solutions-details.html" class="nav-link">Solutions Details</a>
+                                        </li> -->
                                     </ul>
                                 </li>
                                 <li class="nav-item">
@@ -135,12 +111,12 @@
                                         <li class="nav-item">
                                             <a href="case.html" class="nav-link">Case Studies</a>
                                         </li>
-                                        <li class="nav-item">
+                                        <!-- <li class="nav-item">
                                             <a href="case-details.html" class="nav-link">Case Studies Details</a>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </li>
-                                <li class="nav-item">
+                                <!-- <li class="nav-item">
                                     <a href="#" class="nav-link dropdown-toggle">Blog</a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
@@ -150,11 +126,11 @@
                                             <a href="blog-details.html" class="nav-link">Blog Details</a>
                                         </li>
                                     </ul>
-                                </li>
+                                </li> -->
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link dropdown-toggle">Pages</a>
+                                    <a href="#" class="nav-link dropdown-toggle">Informations</a>
                                     <ul class="dropdown-menu">
-                                        <li class="nav-item">
+                                        <!-- <li class="nav-item">
                                             <a href="team.html" class="nav-link">Team</a>
                                         </li>
                                         <li class="nav-item">
@@ -177,7 +153,7 @@
                                         </li>
                                         <li class="nav-item">
                                             <a href="faq.html" class="nav-link">FAQ</a>
-                                        </li>
+                                        </li> -->
                                         <li class="nav-item">
                                             <a href="terms-condition.html" class="nav-link">Terms & Conditions</a>
                                         </li>
@@ -191,17 +167,17 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="nav-right">
+                        <!-- <div class="nav-right">
                             <form>
                                 <div class="input-group">
                                     <input type="text" class="form-control search" placeholder="Search..." />
                                 </div>
                                 <button type="submit"><i class="bx bx-search"></i></button>
                             </form>
-                        </div>
-                        <div class="nav-btn">
-                            <a href="#" class="box-btn">Get Started</a>
-                        </div>
+                        </div> -->
+                        <!-- <div class="nav-btn">
+                            <a href="solutions.html" class="box-btn">Get Started</a>
+                        </div> -->
                     </nav>
                 </div>
             </div>
@@ -255,7 +231,7 @@
                             </div>
                             <div class="content">
                                 <h3>Opening Hours</h3>
-                                <p>Sun - Thu : 10:00 AM - 06:00 PM</p>
+                                <p>Mon - Fri : 09:00 AM - 18:00 PM</p>
                             </div>
                         </div>
                     </div>
@@ -266,7 +242,7 @@
                             </div>
                             <div class="content">
                                 <h3>Address</h3>
-                                <p>28/A Street, New York City, USA</p>
+                                <p>Via Copenaghen 10, Roma, IT</p>
                             </div>
                         </div>
                     </div>
@@ -277,7 +253,7 @@
                             </div>
                             <div class="content">
                                 <h3>Phone</h3>
-                                <p>+1 (321) 984 754</p>
+                                <p>+39 348 2350 751</p>
                             </div>
                         </div>
                     </div>
@@ -289,13 +265,14 @@
         <!-- Home Contact Area -->
         <section class="home-contact-area home-2-contact pb-100">
             <div class="container">
-                <div class="section-title">
+                <!-- <div class="section-title">
                     <span>Contact Us</span>
                     <h2>Let Us Know About Your Project Idea!</h2>
                     <p>It is a long established fact that a reader will be distracted by the rea dable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more.</p>
                 </div>
-
+ -->
                 <div class="row">
+                    <span><b>Contact Us:</b></span>
                     <div class="col-lg-6 col-md-6">
                         <div class="content">
                             <form id="contactForm">
@@ -349,7 +326,8 @@
 
                     <div class="col-lg-6 col-md-6">
                         <div class="contact-img contact-img-2">
-                            <img src="../assets/images/contact-img2.jpg" alt="contact" />
+                            <!-- 1920 x 1080 <img src="../assets/images/contact-img2.jpg" alt="contact" /> -->
+                            <img src="../assets/images/company/contactVivasoft.jpg" alt="contact" />
                         </div>
                     </div>
                 </div>
@@ -358,109 +336,10 @@
         <!-- End Contact Area -->
 
         <!-- Footer Area -->
-        <footer class="footer-area pt-100">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="content">
-                            <div class="logo">
-                                <a href="index.html"><img src="../assets/images/logo2.png" alt="logo" /></a>
-                            </div>
-                            <p>
-                                Lorem ipsum dolor sit amet, mattetur adipiscing elit, sed do eiusmod.
-                            </p>
-                            <div class="subscribe">
-                                <h4>Join Newsletter</h4>
-                                <form class="newsletter-form" data-toggle="validator">
-                                    <input type="email" id="emails" class="form-control" placeholder="Your Email" name="EMAIL" required autocomplete="off">
-
-                                    <button class="box-btn" type="submit">
-                                        Subscribe
-                                    </button>
-
-                                    <div id="validator-newsletter" class="form-result"></div>
-                                </form>
-                            </div>
-
-                            <ul class="social">
-                                <li>
-                                    <a href="#" target="_blank"><i class='bx bxl-facebook' ></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank"><i class='bx bxl-twitter' ></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank"><i class='bx bxl-instagram' ></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank"><i class='bx bxl-pinterest' ></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="content ml-15">
-                            <h3>Our Service</h3>
-                            <ul class="footer-list">
-                                <li><a href="#">Visual Design</a></li>
-                                <li><a href="#"> Development</a></li>
-                                <li><a href="#">QA & Testing</a></li>
-                                <li><a href="#">IT Management</a></li>
-                                <li><a href="#">Cyber Secuirity</a></li>
-                                <li><a href="#">Wireless Connection</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6">
-                        <div class="content">
-                            <h3>Quick Links</h3>
-                            <ul class="footer-list">
-                                <li><a href="faq.html">FAQ</a></li>
-                                <li><a href="solutions.html">Service</a></li>
-                                <li><a href="#">Career</a></li>
-                                <li><a href="privacy.html">Privacy & Policy</a></li>
-                                <li><a href="terms-condition.html">Terms & Conditions</a></li>
-                                <li><a href="#">Data Analysis</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="content contacts">
-                            <h3 class="ml-40">Contact</h3>
-                            <ul class="footer-list foot-social">
-                                <li><a href="tel:+393482350751"><i class="bx bx-mobile-alt"></i> +39 34 82350 751</a></li>
-                                <li><a href="tel:+1975456789"><i class="bx bx-phone"></i> +1 975 456 789</a></li>
-                                <li><a href="mailto:info@vivasoft.it"><i class="bx bxs-envelope"></i> info@vivasoft.it</a></li>
-                                <li><a href="mailto:support@paso.com"><i class="bx bxs-envelope"></i> support@paso.com</a></li>
-                                <li><i class="bx bxs-map"></i> 28/A street, New York, USA</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="copy-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <ul class="menu">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="solutions.html">Solutions</a></li>
-                                <li><a href="case.html">Case Studies</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-6">
-                           <p class="right">
-                                Copyright @2022 Paso. Designed By
-                                <a href="https://hibootstrap.com/" target="_blank">HiBootstrap.com</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <div w3-include-html="footer.html"></div> 
+        <script>
+            includeHTML("en-US");
+        </script>
         <!-- End Footer Area -->
 
         <!-- Start Go Top Area -->
