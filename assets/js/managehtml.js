@@ -7,6 +7,7 @@ function includeHTML(language) {
   var z, i, elmnt, file, xhttp;
 
   console.log('Inside includeHTML! - language:' + language);
+  let filePath = "";
 
   /* Loop through a collection of all HTML elements: */
   z = document.getElementsByTagName("*");
@@ -14,16 +15,15 @@ function includeHTML(language) {
     elmnt = z[i];
     /*search for elements with a certain atrribute:*/
     file = elmnt.getAttribute("w3-include-html");
-    // To Avoid CORS ERROR WHEN TEST LOCALLY
-    // debugger;
-    let filePath = "";
-    if (language = "en-US") {
-      filePath = urlFileEn + file;
-    } else if (language = "it-IT") {
-      filePath = urlFileIt + file;
-    }
+    
     console.log('includeHTML filePath: ' + filePath);
     if (file) {
+      // To Avoid CORS ERROR WHEN TEST LOCALLY
+      if (language = "en-US") {
+        filePath = urlFileEn + file;
+      } else if (language = "it-IT") {
+        filePath = urlFileIt + file;
+      };
       /* Make an HTTP request using the attribute value as the file name: */
       xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function() {
@@ -36,9 +36,9 @@ function includeHTML(language) {
             includeHTML("en-US");
           } else if (language = "it-IT") {
             includeHTML("it-IT");
-          }
-        }
-      }
+          };
+        };
+      };
       
       xhttp.open("GET", filePath, true);
       xhttp.send();
