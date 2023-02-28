@@ -306,7 +306,8 @@ jQuery(function ($) {
         }
     }
     // Immediately invoked function to set the theme on initial load
-    (function () {
+    // PATRIZIO
+    /* (function () {
         if (localStorage.getItem('paso_theme') === 'theme-dark') {
             setTheme('theme-dark');
             document.getElementById('slider').checked = false;
@@ -314,4 +315,4 @@ jQuery(function ($) {
             setTheme('theme-light');
         document.getElementById('slider').checked = true;
         }
-    })();
+    })(); */
