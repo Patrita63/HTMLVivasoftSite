@@ -1,15 +1,18 @@
 .cookie-box {
     position: fixed;
     z-index: 1;
-    left: 15%;
-    bottom: 50%;
+    left: 22%;
+    bottom: 35%;
+    background-color: rgb(3, 21, 33);
+    font-weight: bold;
+    color:yellowgreen;
   }
   
   .cookie-box .cookie {
     position: relative;
     display: inline-block;
-    width: 900px;
-    height: 80px;
+    width: 100%;
+    height: 165px;
   }
   
   .cookie-box .cookie input {
