@@ -23,6 +23,7 @@
       {
         "listitem": "off"
       }
-    ]
+    ],
+    "meta-viewport": "off"
   }
 }
