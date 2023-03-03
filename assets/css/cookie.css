@@ -2,10 +2,10 @@
     position: fixed;
     z-index: 1;
     left: 22%;
-    bottom: 35%;
-    background-color: rgb(3, 21, 33);
-    font-weight: bold;
-    color:yellowgreen;
+    bottom: 1%;
+    background-image: url("../images/contact-bg.png");
+    font-weight: 10rem;
+    color:rgb(103, 124, 76);
   }
   
   .cookie-box .cookie {
@@ -16,7 +16,7 @@
   }
   
   .cookie-box .cookie input {
-    opacity: 100;
+    opacity: 1;
     width: 100;
     height: 100;
   }
