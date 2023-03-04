@@ -755,6 +755,10 @@ Header Area Css
 /*
 header-2 Area Css
 ======================================================*/
+/* PATRIZIO */
+.header-2.bg-image {
+  background-image: url("../images/contact-bg.png");
+}
 .header-2 {
   background: #3d59fa;
 }
