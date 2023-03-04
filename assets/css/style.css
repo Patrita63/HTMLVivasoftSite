@@ -4910,7 +4910,7 @@ Signup Area Css
   margin-top: 20px;
 }
 
-.signup-area .privecy-txt {
+.signup-area .privacy-txt {
   font-size: 14px;
 }
 
@@ -5086,13 +5086,13 @@ Testimonials Area Css
 Terms Area Css
 ======================================================*/
 .terms-area,
-.privecy-area {
+.privacy-area {
   position: relative;
   overflow: hidden;
 }
 
 .terms-area h2,
-.privecy-area h2 {
+.privacy-area h2 {
   color: #051242;
   margin-bottom: 15px;
   font-size: 30px;
