@@ -435,6 +435,24 @@ Go Top Style*/
 /** Box Btn Css **/
 /* PATRIZIO */
 
+.box-btn-transparent {
+  font-size: 16px;
+  color: #ffffff;
+  padding: 15px 25px;
+  line-height: 1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  text-transform: capitalize;
+  position: relative;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+  background: rgba(0,0,0,0); /* Ultimo 0 trasparente */
+  border: 1px solid rgba(0,0,0,0);
+}
+
 .box-btn-gray {
   font-size: 16px;
   color: #ffffff;
@@ -467,9 +485,9 @@ Go Top Style*/
   text-align: center;
   overflow: hidden;
   z-index: 1;
-  background-color: #1d42d9;
-  border: 2px solid #f5f5f8;
-  /* border: 1px solid #1d42d9; */
+  background-color: #0a1339;
+  /* border: 2px solid #f5f5f8; */
+  border: 1px solid #0a1339;
 }
 /* PATRIZIO */
 
