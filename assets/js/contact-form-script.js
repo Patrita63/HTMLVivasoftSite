@@ -7,7 +7,22 @@
         if (event.isDefaultPrevented()) {
             // handle the invalid form...
             formError();
-            submitMSG(false, "Did you fill in the form properly?");
+            // PATRIZIO
+            // index.html
+            /* <a href="../en-US/about.html" id="lang" title="Vivasoft s.r.l. en-US" class="nav-link"><font color="white">en-US </font> 
+                <img src="../assets/images/en-US.jpeg" alt="Vivasoft S.R.L." style="border: 1px solid #ffffff;" />
+            </a> */
+            var lang = document.getElementById("langMail");
+            lang = lang.innerText.trimEnd();
+            if (lang == "en-US") {
+                submitMSG(false, "Il form é stato compilato correttamente?");
+            }
+
+            if (lang == "it-IT") {
+                submitMSG(false, "Have you completed the form correctly?");
+                // submitMSG(false, "Did you fill in the form properly?");
+            }
+            
         } else {
             // everything looks good!
             event.preventDefault();
